@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW Player Testt</title>
+    <script src="https://ssl.p.jwpcdn.com/player/v/8.38.10/jwplayer.js"></script>
+    <script>jwplayer.key="QybHxeEatECB7VWGt/y7fw69lOha2N4x3Es4kNK1RhDAmYzB"</script>
+</head>
+<body>
+    <h1>JW Player  Test</h1>
+    <h2>Stream</h2>
+    <div class="player-container">
+        <div id="player-bet"></div>
+    </div>
+    <script>
+        jwplayer("player-bet").setup({
+            file: "PUT IN YOUR M3U8 LINK HERE",
+            width: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+            mute: false,
+            controls: true,
+            pip: true,
+            pipIcon: "enabled"           
+        });
+    </script>
+</body>
+</html>
